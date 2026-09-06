@@ -5,6 +5,8 @@ import CardDetails from './Components/CardsDetails.jsx';
 import Carts from './Components/Carts.jsx'
 import {SearchProvider} from './Components/SearchContext.jsx'
 import WishList from './Components/WishList.jsx';
+import SignUp from './Components/SignUp.jsx';
+import Login from './Components/Login.jsx';
 
 export default function App(){
   return(
@@ -17,6 +19,8 @@ export default function App(){
     <Route path='/' element={<Search/>}/>
     <Route path='/CardsDetail/:id' element={<CardDetails/>} />
     <Route path = '/cart' element = {<Carts/>}/>
+    <Route path = '/SignUpPath' element = {<SignUp/>}/>
+    <Route path = '/LogInPath' element = {<Login/>}/>
     </Routes>
     </BrowserRouter>
     </SearchProvider>
