@@ -24,7 +24,7 @@ export default function Navbar(){
   left: 0,
   width: '100%',
   zIndex: 1000, 
-  backgroundColor: '#your-color'
+  backgroundColor: '#212121'
 }}>
         <div style={{
   backgroundColor: 'green',
@@ -116,7 +116,6 @@ export default function Navbar(){
   </button>
 </div>
         </div>
-      
         
     )
 }

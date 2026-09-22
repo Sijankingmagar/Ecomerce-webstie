@@ -13,8 +13,8 @@ export default function App(){
     <SearchProvider>
     <BrowserRouter>
      <Navbar/>
-     <main style={{paddingTop:'60px' }}></main>
-    <Routes>  
+      <div style={{ paddingTop: '70px' }}> 
+    <Routes>
    <Route path = '/wishList' element = {<WishList/>}/>
     <Route path='/' element={<Search/>}/>
     <Route path='/CardsDetail/:id' element={<CardDetails/>} />
@@ -22,6 +22,7 @@ export default function App(){
     <Route path = '/SignUpPath' element = {<SignUp/>}/>
     <Route path = '/LogInPath' element = {<Login/>}/>
     </Routes>
+    </div>
     </BrowserRouter>
     </SearchProvider>
   )

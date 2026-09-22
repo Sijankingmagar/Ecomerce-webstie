@@ -94,7 +94,7 @@ export default function Search(){
 
     return(
         <>
-        <div style={{paddingTop:'70px', backgroundColor:'#514646', display:'flex',justifyContent:'space-evenly'}}>
+        <div style={{ backgroundColor:'#514646', display:'flex',justifyContent:'space-evenly', height:'30px', alignItems:'center'}}>
             <h3>Categories</h3>
            <button className="category-btn" onClick={()=>handleCategory("all")}>ALL</button>
            <button className="category-btn" onClick={()=> handleCategory("beauty")}>Beauty</button>
@@ -105,13 +105,61 @@ export default function Search(){
            <button className="category-btn" onClick={()=>handleCategory("smartphone")}>Smartphones</button>
            <button className="category-btn" onClick={()=>handleCategory("watches")}>Watches</button>
         </div>
-        <div>
-            <button onClick={()=>setSortOrder("low")}>Price: Low to High</button>
-            <button onClick={()=>setSortOrder("high")}>Price: High to Low</button>
-        </div>
-        <button
-        onClick={handleWishlist}
-            >WishLists</button>
+        <div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  gap: '20px',
+  backgroundColor: '#403c3c',
+  padding: '10px 0'
+}}>
+  <button
+    className="color"
+    onClick={() => setSortOrder("low")}
+    style={{
+      padding: '8px 16px',
+      borderRadius: '6px',
+      backgroundColor: '#514646',
+      color: 'white',
+      border: 'none',
+      cursor: 'pointer',
+      fontSize: '14px'
+    }}
+  >
+    Price: Low to High
+  </button>
+
+  <button
+    className="color"
+    onClick={() => setSortOrder("high")}
+    style={{
+      padding: '8px 16px',
+      borderRadius: '6px',
+      backgroundColor: '#514646',
+      color: 'white',
+      border: 'none',
+      cursor: 'pointer',
+      fontSize: '14px'
+    }}
+  >
+    Price: High to Low
+  </button>
+
+  <button
+    onClick={handleWishlist}
+    style={{
+      padding: '8px 16px',
+      borderRadius: '6px',
+      backgroundColor: '#514646',
+      color: 'white',
+      border: 'none',
+      cursor: 'pointer',
+      fontSize: '14px'
+    }}
+  >
+    WishLists
+  </button>
+</div>
         <div style={{
             minHeight:'100vh',
             backgroundColor:'#b1abab',
