@@ -11,3 +11,12 @@ html, body {
 .color{
     background-color:#403c3c;
 }
+.color:hover{
+    transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.hover:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}

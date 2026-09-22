@@ -13,7 +13,7 @@ export default function App(){
     <SearchProvider>
     <BrowserRouter>
      <Navbar/>
-      <div style={{ paddingTop: '70px' }}> 
+      <div style={{ paddingTop: '57px' }}> 
     <Routes>
    <Route path = '/wishList' element = {<WishList/>}/>
     <Route path='/' element={<Search/>}/>
