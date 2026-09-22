@@ -26,14 +26,97 @@ export default function Navbar(){
   zIndex: 1000, 
   backgroundColor: '#your-color'
 }}>
-        <div style= {{backgroundColor:'green', display:'flex', justifyContent:'center', gap:'20px',padding:'10px', height:'50px',position:'fixed', width:'100%', top:'0'}}>
-        <h1 style={{margin: 0, marginRight: '80px', fontSize: '24px', color: 'white'}}>EComerce</h1>
-        <input placeholder="Search products" value = {input} onChange= {(e)=>setInput(e.target.value)} style={{width:'300px', padding:'10px'}}/>
-        <button onClick={handleClick}>Search</button>
-         <button onClick={handleSignUp }>SignUp</button>
-        <button onClick={handleLogIn}>LogIn</button>
+        <div style={{
+  backgroundColor: 'green',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  gap: '20px',
+  padding: '10px 20px',
+  height: '70px',
+  position: 'fixed',
+  width: '100%',
+  top: 0,
+  boxSizing: 'border-box',
+  zIndex: 1000
+}}>
+  <h1 style={{
+    margin: 0,
+    marginRight: '60px',
+    fontSize: '24px',
+    color: 'white',
+    fontFamily: 'serif'
+  }}>
+    E-Commerce
+  </h1>
+
+  <input
+    placeholder="Search products"
+    value={input}
+    onChange={(e) => setInput(e.target.value)}
+    style={{
+      width: '300px',
+      padding: '10px 14px',
+      borderRadius: '8px',
+      border: 'none',
+      outline: 'none',
+      fontSize: '14px'
+    }}
+  />
+
+  <button
+    onClick={handleClick}
+    style={{
+      width: '120px',
+      padding: '10px',
+      borderRadius: '8px',
+      backgroundColor: '#212121',
+      color: '#ffffff',
+      border: 'none',
+      cursor: 'pointer',
+      fontSize: '14px',
+      fontWeight: '500'
+    }}
+  >
+    Search
+  </button>
+
+  <button
+    onClick={handleSignUp}
+    style={{
+      width: '100px',
+      padding: '10px',
+      borderRadius: '8px',
+      backgroundColor: '#212121',
+      color: '#ffffff',
+      border: 'none',
+      cursor: 'pointer',
+      fontSize: '14px',
+      fontWeight: '500'
+    }}
+  >
+    SignUp
+  </button>
+
+  <button
+    onClick={handleLogIn}
+    style={{
+      width: '100px',
+      padding: '10px',
+      borderRadius: '8px',
+      backgroundColor: '#212121',
+      color: '#ffffff',
+      border: 'none',
+      cursor: 'pointer',
+      fontSize: '14px',
+      fontWeight: '500'
+    }}
+  >
+    LogIn
+  </button>
+</div>
         </div>
-        </div>
+      
         
     )
 }
